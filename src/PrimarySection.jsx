@@ -4,11 +4,14 @@ import Skills from "./Skills"
 import Experiences from "./Experiences"
 import Projects from "./Projects"
 import ShowcaseBody from "./ShowcaseBody"
+import { motion, AnimatePresence } from "motion/react"
 
 function PrimarySection() {
     const [category,setCategory] = useState(0)
+    const [toggled,setToggled] = useState(false);
 
     const incrementCategory = () => {
+        setToggled(!toggled);
         setCategory((prevCategory) => {
             let newCategory = prevCategory + 1
             if (newCategory >= data["categories"].length) {
@@ -24,7 +27,20 @@ function PrimarySection() {
         <section className='flex flex-col'>
             <div className="text-left text-xl">
                 <h2 >My highlights as a</h2>
-                <button className="text-3xl bg-[#77DD77] rounded-3xl px-4 py-2 my-2" onClick={incrementCategory}>{data.categories[category]}</button>
+                <AnimatePresence mode="wait">
+                    <motion.button 
+                        className="text-3xl bg-[#77DD77] rounded-3xl px-4 py-2 my-2" 
+                        onClick={incrementCategory} 
+                        key={toggled ? "new" : "old"}
+                        initial={{opacity:0}}
+                        animate={{opacity:1}}
+                        exit={{opacity:0}}
+                        whileHover={{scale:1.05}}
+                        >
+                        {data.categories[category]}
+                    </motion.button>
+
+                </AnimatePresence>
                 <section className="flex flex-col gap-4 py-4">
                     {
                         modifiedExperiences.length > 0 ?

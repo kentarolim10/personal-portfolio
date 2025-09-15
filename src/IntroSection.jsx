@@ -1,18 +1,19 @@
 import { CiLinkedin } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "motion/react";
 
 function IntroSection() {
     return (
-        <section className="w-full py-4 min-h-screen flex flex-col justify-center">
+        <motion.section className="w-full py-4 min-h-screen flex flex-col justify-center" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2}}>
             <h4 className="text-xl">Hey, I'm Kentaro</h4>
             <h1 className="text-4xl">Software Engineer</h1>
             <section className="flex flex-row justify-center gap-4 py-4">
-                <a href="https://www.linkedin.com/in/kentarolim10/" target="_blank"><CiLinkedin/></a>
-                <a href="mailto:kentarolim10@gmail.com"><MdOutlineEmail/></a>
-                <a href="https://github.com/kentarolim10" target="_blank"><FaGithub/></a>
+                <motion.a href="https://www.linkedin.com/in/kentarolim10/" target="_blank" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><CiLinkedin/></motion.a>
+                <motion.a href="mailto:kentarolim10@gmail.com" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><MdOutlineEmail/></motion.a>
+                <motion.a href="https://github.com/kentarolim10" target="_blank" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><FaGithub/></motion.a>
             </section>
-        </section>
+        </motion.section>
     )
 }
 

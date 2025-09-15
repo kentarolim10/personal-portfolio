@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { motion } from "motion/react";
 
 function Projects({projects,category}) {
     const [projectsInfo,setprojectsInfo] = useState({});
