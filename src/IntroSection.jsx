@@ -2,6 +2,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "motion/react";
+import { SiDevpost } from "react-icons/si";
 
 function IntroSection() {
     return (
@@ -12,6 +13,7 @@ function IntroSection() {
                 <motion.a href="https://www.linkedin.com/in/kentarolim10/" target="_blank" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><CiLinkedin/></motion.a>
                 <motion.a href="mailto:kentarolim10@gmail.com" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><MdOutlineEmail/></motion.a>
                 <motion.a href="https://github.com/kentarolim10" target="_blank" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><FaGithub/></motion.a>
+                <motion.a href="https://devpost.com/kentarolim10" target="_blank" whileTap={{scale:0.95}} whileHover={{scale:1.1}}><SiDevpost/></motion.a>
             </section>
         </motion.section>
     )
