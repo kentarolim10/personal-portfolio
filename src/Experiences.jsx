@@ -30,7 +30,7 @@ function Experiences({experiences,category}) {
                                     }
                                 </span>
                                 :
-                                <img layout src={"../images/" + experience["image"]} alt={experience["company"]} />
+                                <img layout src={"/images/" + experience["image"]} alt={experience["company"]} />
                             }
                         </motion.button>
                         <h4 className="font-semibold">{experience["position"]}</h4>

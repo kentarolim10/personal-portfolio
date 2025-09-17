@@ -26,7 +26,7 @@ function Projects({projects,category}) {
                                     }
                                 </span>
                                 :
-                                <img  src={"../images/" + project["image"]} alt={project["name"]} />
+                                <img  src={"/images/" + project["image"]} alt={project["name"]} />
                             }
                         </button>
                         <h4 className="font-semibold">{project["name"]}</h4>
