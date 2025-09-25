@@ -17,12 +17,10 @@ function Experiences({experiences,category}) {
                     <section key={index} className="flex flex-col px-4 rounded-md">
                         <motion.button className="bg-white w-full p-4 flex justify-center rounded-xl mb-4" onClick={() => handleClick(experience["company"])}
                             whileHover={{scale:1.05}}
-                            layout
-                            transition={{layout: {duration:1,ease:"easeInOut"}}}
                             >
                             {   
                                 experiencesInfo[experience["company"]] ?
-                                <span layout className="text-sm text-left">
+                                <span className="text-sm text-left">
                                     {
                                         experience["description"].map((descriptor,j) => (
                                             <li key={j} className="ml-4">{descriptor}</li>
@@ -30,7 +28,7 @@ function Experiences({experiences,category}) {
                                     }
                                 </span>
                                 :
-                                <img layout src={"/images/" + experience["image"]} alt={experience["company"]} />
+                                <img src={"/images/" + experience["image"]} alt={experience["company"]} />
                             }
                         </motion.button>
                         <h4 className="font-semibold">{experience["position"]}</h4>
