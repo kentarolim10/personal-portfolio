@@ -128,10 +128,11 @@
             "location": "Vancouver, BC",
             "date": "January 2023 - August 2023",
             "startDate": 202301,
-            "description": ["Built full-stack features for non-profit healthcare service using Angular, Node.js, Express.js, and Bookshelf.js.",
-            "Engineered cloud text message receiving service, reducing costs and computation by 80% by refactoring old service to an Event-Driven Architecture using Twilio, AWS Lambda, and Amazon SQS.",
-            "Built a robust front-end, increased front-end code coverage from 20% to over 80% by leading Unit and Integrated Testing using Angular Testing Library.",
-            "Shared current bugs and future improvements in daily stand-up meetings, gave demos for completed features."],
+            "description": ["Built responsive UI pages using Angular, HTML, and CSS for a non-profit healthcare web application.",
+                            "Developed RESTful API endpoints using Node.js, Express.js, Bookself ORM, SQL, and Docker for containerization, allowing users to manage their data.",
+                            "Architected event-driven message receiving service using JavaScript, AWS Lambda, Amazon SQS, and Twilio, reducing computation from old polling model by 80%.",
+                            "Elevated the robustness of the front-end by leading Unit and Integrated Testing using Angular Testing Library for Angular pages, increasing front-end code coverage from 20% to over 80%.",
+                            "Worked closely with clients by giving demos, using Agile methodology and Kanban for team development."],
             "categories": ["Software Engineer"],
             "image": "weltel.png"
         },
@@ -141,10 +142,11 @@
             "location": "Remote",
             "date": "September 2022 - December 2022",
             "startDate": 202209,
-            "description": ["Advanced 2 web apps that match post-secondary institutions research projects with students in CI/CD pipeline.",
-            "Automated custom response emails, reducing manual human workload, by using nodemailer and JavaScript.",
-            "Optimized server performance, reducing fetching 1000+ unnecessary entries to 20 per page, by implementing pagination for tables consisting of student data using Angular, Node.js, and Express.js.",
-            "Enhanced student and professor data, increasing user satisfaction, by modifying SQL tables through migrations using Flyway; Gave access to data through new back-end endpoints using Express.js and Sequelize ORM."],
+            "description": ["Advanced 2 full-stack applications using Angular, Node.js, and Express.js, developing in a CI/CD Pipeline using git, Bitbucket, and Jenkins.",
+                            "Displayed new data on pages using Angular Material, HTML, and CSS, creating responsive UI elements.",
+                            "Created CRUD APIs for new SQL schemas using Express.js and Sequelize ORM, improving user data.",
+                            "Architected a high scaling back-end model for fetching users by implementing pagination using JavaScript and SQL, reducing 1000+ unnecessary fetches to 10-50 per page.",
+                            "Collaborated closely with the business and development teams, using Agile development and Scrum sprints."],
             "categories": ["Software Engineer"],
             "image": "mitacs.png"
         }
@@ -154,8 +156,8 @@
             "name": "PlanIT Event Planner",
             "date": "Febuary 2025 - March 2025",
             "startDate": 202502,
-            "description": ["Azure Cloud hosted web application that uses OpenAI’s gpt-3.5-turbo and Azure Computer Vision to create event plans using user descriptions and inspiration images; Includes dashboard to manage TODOs and budget.",
-            "Created a highly scalable and serverless back-end using Azure API Management and Azure functions; Maintained optimal system design by storing images in blob storage and event plans in Cosmos MongoDB."
+            "description": ["Developed Azure based web application that using JavaScript, OpenAI’s gpt-3.5-turbo, and Azure Computer Vision that creates event plans based on prompt.",
+                            "Created a highly scalable and serverless back-end using Azure API Management and Azure functions with images stored in blob storage and event plans in noSQL Cosmos MongoDB."
             ],
             "categories": ["Software Engineer", "ML/AI Engineer"],
             "image": "planit.png"
@@ -165,9 +167,9 @@
             "date": "September 2023 - December 2023",
             "startDate": 202309,
             "description": [
-                "Enhanced usability of two open source JuptyerLab extensions during 3 month MLH fellowship program.",
-                "Synchronized Jupyter-variable-inspector to achieve 100% design consistency by migrating UI libraries.",
-                "Collaborated globally through GitHub issues to find bugs and shared solutions with sponsors; Increased usability of JupyterLab integration with Git by solving I/O bugs with Python and TypeScript."
+                            "Enhanced usability of two open source JuptyerLab extensions during 3 month MLH fellowship program.",
+                            "Increased usability of JupyterLab integration with Git by using Python, TypeScript, and the DOM, fixing I/O bugs and improving GUI.",
+                            "Synchronized Jupyter-variable-inspector to achieve 100% design consistency by migrating UI libraries."
             ],
             "categories": ["Software Engineer"],
             "image": "jupyterlab.png"
